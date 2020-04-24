@@ -3,69 +3,32 @@
  * @param {number} amount
  * @return {number}
  */
-var coinChange = function(coins, amount) {
-  var times = 0
+var coinChange = function (coins, amount) {
+  if (amount === 0) return 0
 
-  var success = false
+  const dp = new Array(amount + 1).fill(0)
 
-  var findMap = {}
+  for (let i = 0; i < coins.length; i++) {
+    for (let j = 1; j <= amount; j++) {
+      if (coins[i] <= j) {
+        let index = j - coins[i]
 
-  function findResult(coins, amounts) {
-    times++
-
-    var caseArr = []
-
-    for (var i = 0; i < amounts.length; i++) {
-      for (var j = 0; j < coins.length; j++) {
-
-        var leave = amounts[i] - coins[j]
-
-        if (leave === 0) {
-          success = true
-          return
-        }
-
-        if (leave > 0) {
-          if (!findMap[leave]) {
-            findMap[leave] = 'finding'
-            caseArr.push(leave)
+        if (index === 0) {
+          dp[j] = 1
+        } else {
+          if (dp[index] !== 0) {
+            dp[j] = (dp[index] < dp[j] || dp[j] === 0) ? dp[index] + 1 : dp[j]
           }
         }
-
-        
       }
     }
-
-    if (caseArr.length > 0) {
-      findResult(coins, caseArr)
-    }
-
-    
-    if (success) {
-      return
-    }
   }
 
-  if (amount === 0) {
-    return 0
-  }
-
-  findResult(coins, [amount])
-
-  if (success) {
-    return times
-  } else {
-    return -1
-  }
+  return dp[amount] !== 0 ? dp[amount] : -1
 
 };
 
-
-
-/**
- * test
- */
-
-// const result = coinChange([1,2,5], 11)
-const result = coinChange([1], 0)
+// const result = coinChange([1, 2, 5], 11)
+const result = coinChange([1,2,5,10], 18)
+// const result = coinChange([1], 0)
 console.log(result)
