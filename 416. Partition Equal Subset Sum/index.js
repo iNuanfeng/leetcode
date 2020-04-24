@@ -37,11 +37,7 @@ var canPartition = function(nums) {
     }
   }
 
-  if (dp[len][v] === v) {
-    return true
-  } else {
-    return false
-  }
+  return dp[len][v] === v
 
 };
 
