@@ -8,6 +8,8 @@
 
 - 字数组余数：523. Continuous Subarray Sum - [题解](https://leetcode-cn.com/problems/continuous-subarray-sum/solution/dong-tai-gui-hua-pan-0-by-inuanfeng/)
 
+- 无重复字符的最长子串：3. Longest Substring Without Repeating Characters - [题解](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/solution/dong-tai-gui-hua-jie-by-inuanfeng/)
+
 ## 二分查找
 - 二分查找 + 数据缓存：1095. Find in Mountain Array
 
