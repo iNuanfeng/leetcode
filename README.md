@@ -10,6 +10,8 @@
 
 - 无重复字符的最长子串：3. Longest Substring Without Repeating Characters - [题解](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/solution/dong-tai-gui-hua-jie-by-inuanfeng/)
 
+- 最小跳跃步数问题 - 动态规划 + 循环策略优化：45. Jump Game II - [题解](https://leetcode-cn.com/problems/jump-game-ii/solution/dong-tai-gui-hua-xun-huan-ce-lue-you-hua-by-inuanf/)
+
 ## 二分查找
 - 二分查找 + 数据缓存：1095. Find in Mountain Array
 
