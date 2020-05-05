@@ -12,6 +12,9 @@
 
 - 最小跳跃步数问题 - 动态规划 + 循环策略优化：45. Jump Game II - [题解](https://leetcode-cn.com/problems/jump-game-ii/solution/dong-tai-gui-hua-xun-huan-ce-lue-you-hua-by-inuanf/)
 
+## 二叉树
+- 前序遍历判断二叉树：98. Validate Binary Search Tree - [题解](https://leetcode-cn.com/problems/validate-binary-search-tree/solution/er-cha-shu-qian-xu-bian-li-shu-zu-xun-huan-pan-dua/)
+
 ## 二分查找
 - 二分查找 + 数据缓存：1095. Find in Mountain Array
 
